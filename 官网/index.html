@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>佛山市新颖数投网络科技有限公司｜产业园招商广告投放与线索运营服务</title>
+  <meta name="description" content="佛山市新颖数投网络科技有限公司为民营产业园和产业地产项目提供招商广告投放、电话验证、线索分级和意向商机交付服务。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182334;
+      --muted: #5d6878;
+      --soft: #eef2f6;
+      --line: #dbe2ea;
+      --panel: #ffffff;
+      --brand: #0f6b7b;
+      --brand-deep: #0a3f4f;
+      --accent: #c77b2e;
+      --ok: #28785e;
+      --shadow: 0 18px 50px rgba(24, 35, 52, .12);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f9fb;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(219, 226, 234, .9);
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      font-weight: 700;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 7px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--brand), var(--brand-deep));
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 0;
+      flex: 0 0 auto;
+    }
+
+    .brand-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .phone-link {
+      color: var(--brand-deep);
+      font-weight: 700;
+    }
+
+    .hero {
+      min-height: calc(100vh - 64px);
+      display: grid;
+      align-items: center;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background: #101b27;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(9, 19, 29, .94) 0%, rgba(9, 19, 29, .82) 39%, rgba(9, 19, 29, .26) 74%, rgba(9, 19, 29, .08) 100%),
+        url("assets/hero-industrial-growth.png") center / cover no-repeat;
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 96px;
+      background: linear-gradient(180deg, rgba(247, 249, 251, 0), #f7f9fb 84%);
+      z-index: -1;
+    }
+
+    .hero-inner {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0 112px;
+      color: #fff;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 30px;
+      padding: 4px 10px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, .08);
+      color: rgba(255, 255, 255, .84);
+      font-size: 13px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 24px 0 18px;
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      margin-bottom: 32px;
+      color: rgba(255, 255, 255, .82);
+      font-size: 19px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .16);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      border-color: rgba(255, 255, 255, .32);
+      background: rgba(255, 255, 255, .1);
+      color: #fff;
+    }
+
+    .hero-proof {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 790px;
+    }
+
+    .proof-item {
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 8px;
+      padding: 16px;
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .proof-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .proof-item span {
+      color: rgba(255, 255, 255, .74);
+      font-size: 13px;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .wrap {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: clamp(26px, 3vw, 40px);
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+
+    .section-lead {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 24px;
+      box-shadow: 0 8px 26px rgba(24, 35, 52, .05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .problem-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .problem {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+    }
+
+    .problem:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .num {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: #e7f2f4;
+      color: var(--brand-deep);
+      font-weight: 800;
+    }
+
+    .band {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .steps {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .step {
+      min-height: 180px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 18px;
+    }
+
+    .step small {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .step span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .levels {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .level {
+      border-radius: 8px;
+      padding: 22px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .level b {
+      display: inline-grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 14px;
+      border-radius: 8px;
+      color: #fff;
+      background: var(--brand);
+    }
+
+    .level:nth-child(2) b {
+      background: var(--ok);
+    }
+
+    .level:nth-child(3) b {
+      background: #64748b;
+    }
+
+    .level:nth-child(4) b {
+      background: #9b4d42;
+    }
+
+    .level h3 {
+      margin-bottom: 8px;
+    }
+
+    .level p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .diagnosis {
+      display: grid;
+      grid-template-columns: 1fr 430px;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .diagnosis-panel {
+      border-radius: 8px;
+      padding: 30px;
+      background: #102536;
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .diagnosis-panel p,
+    .diagnosis-panel li {
+      color: rgba(255, 255, 255, .78);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 16px 0 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 24px;
+      box-shadow: 0 8px 26px rgba(24, 35, 52, .06);
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid #cfd8e3;
+      border-radius: 6px;
+      padding: 12px 13px;
+      color: var(--ink);
+      background: #fff;
+      font: inherit;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(15, 107, 123, .14);
+    }
+
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+    }
+
+    .form-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .form-actions .btn {
+      width: 100%;
+    }
+
+    .btn-form {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .btn-call {
+      background: #f2f5f7;
+      color: var(--brand-deep);
+      border-color: var(--line);
+    }
+
+    .notice {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .status {
+      min-height: 22px;
+      color: var(--ok);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .boundary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .boundary .card {
+      min-height: 220px;
+    }
+
+    .footer {
+      padding: 38px 0;
+      background: #101b27;
+      color: rgba(255, 255, 255, .78);
+    }
+
+    .footer-inner {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer strong {
+      color: #fff;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-proof,
+      .grid-3,
+      .grid-2,
+      .levels,
+      .boundary {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .diagnosis {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .nav {
+        min-height: 58px;
+      }
+
+      .brand-name {
+        max-width: 240px;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        padding: 54px 0 92px;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(9, 19, 29, .96) 0%, rgba(9, 19, 29, .82) 52%, rgba(9, 19, 29, .42) 100%),
+          url("assets/hero-industrial-growth.png") center / cover no-repeat;
+      }
+
+      .hero-copy {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .form-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">新</span>
+        <span class="brand-name">佛山市新颖数投网络科技有限公司</span>
+      </a>
+      <div class="nav-links">
+        <a href="#solution">解决方案</a>
+        <a href="#delivery">交付内容</a>
+        <a href="#boundary">服务边界</a>
+        <a class="phone-link" href="tel:18578305991">朱先生 18578305991</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <span class="eyebrow">面向产业园物业持有者、招商部门与营销部门</span>
+        <h1 id="hero-title">产业园招商广告投放与线索运营服务</h1>
+        <p class="hero-copy">帮助民营产业园和产业地产项目，从广告流量中筛选真实可跟进的招商商机，减少无效线索消耗，让招商团队把精力放在更可能转化的企业客户上。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#diagnosis">预约招商增长诊断</a>
+          <a class="btn btn-secondary" href="tel:18578305991">拨打朱先生</a>
+        </div>
+        <div class="hero-proof" aria-label="服务重点">
+          <div class="proof-item">
+            <strong>14-21 天</strong>
+            <span>首期试运营验证投放与线索质量</span>
+          </div>
+          <div class="proof-item">
+            <strong>A/B/C/D</strong>
+            <span>电话验证后进行招商意向分级</span>
+          </div>
+          <div class="proof-item">
+            <strong>不卖名单</strong>
+            <span>交付主动咨询线索与有效商机记录</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="section-kicker">客户痛点</p>
+        <h2>很多园区不是没有线索，而是没有把线索变成商机</h2>
+        <p class="section-lead">产业园招商广告常见问题是：花了广告费、拿到电话线索、安排了少量上门，但最终成交为零。真正需要被管理的，是从广告点击到电话验证、意向分级、招商承接之间的完整链路。</p>
+        <div class="problem-list">
+          <div class="problem">
+            <span class="num">01</span>
+            <div>
+              <h3>广告线索不等于招商需求</h3>
+              <p>企业点进广告，可能只是了解价格、政策或厂房信息。是否真的有扩产、搬迁、仓储、办公或设点需求，需要电话验证。</p>
+            </div>
+          </div>
+          <div class="problem">
+            <span class="num">02</span>
+            <div>
+              <h3>招商团队缺少优先级</h3>
+              <p>同样是一批电话，有些值得当天跟进，有些只适合长期培育。如果没有分级，团队容易把时间花在低意向线索上。</p>
+            </div>
+          </div>
+          <div class="problem">
+            <span class="num">03</span>
+            <div>
+              <h3>投放复盘停留在曝光和点击</h3>
+              <p>园区真正关心的是有效企业、预约看园、未成交原因和下一步优化。广告数据必须和招商动作连起来。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="solution">
+      <div class="wrap">
+        <p class="section-kicker">解决方案</p>
+        <h2>把广告投放升级为招商线索运营</h2>
+        <p class="section-lead">我们围绕园区招商目标，完成目标企业筛选、广告获客、电话初筛、线索分级、商机转交和周报复盘，帮助客户看清每一笔广告费带来的真实招商机会。</p>
+        <div class="steps">
+          <div class="step">
+            <small>STEP 01</small>
+            <strong>园区诊断</strong>
+            <span>梳理位置、价格、面积、政策、行业准入和真实卖点。</span>
+          </div>
+          <div class="step">
+            <small>STEP 02</small>
+            <strong>目标画像</strong>
+            <span>按行业、区域、企业规模、经营特征建立目标企业方向。</span>
+          </div>
+          <div class="step">
+            <small>STEP 03</small>
+            <strong>广告获客</strong>
+            <span>围绕选址、扩产、搬迁、厂房、政策等诉求设计投放。</span>
+          </div>
+          <div class="step">
+            <small>STEP 04</small>
+            <strong>电话验证</strong>
+            <span>确认企业需求、面积、时间、区域、关注点和下一步意向。</span>
+          </div>
+          <div class="step">
+            <small>STEP 05</small>
+            <strong>商机转交</strong>
+            <span>输出 A/B/C/D 分级、预约记录、无效原因和优化建议。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="delivery">
+      <div class="wrap">
+        <p class="section-kicker">交付内容</p>
+        <h2>交付经过验证的招商机会，而不是一堆未经筛选的电话</h2>
+        <p class="section-lead">每条线索都会围绕企业真实性、行业匹配度、需求明确度、选址时间、面积要求、区域接受度和继续沟通意愿进行记录。</p>
+        <div class="levels">
+          <div class="level">
+            <b>A</b>
+            <h3>高意向商机</h3>
+            <p>近期有明确选址、扩产、搬迁或场地需求，愿意由招商经理继续跟进。</p>
+          </div>
+          <div class="level">
+            <b>B</b>
+            <h3>可培育商机</h3>
+            <p>行业匹配且有兴趣，但时间、预算、面积或区域仍需进一步确认。</p>
+          </div>
+          <div class="level">
+            <b>C</b>
+            <h3>长期潜在线索</h3>
+            <p>企业基本匹配，当前暂无明确需求，适合低频维护和后续二次触达。</p>
+          </div>
+          <div class="level">
+            <b>D</b>
+            <h3>无效或不匹配</h3>
+            <p>电话无效、行业不符、区域不接受、明确拒绝或存在误填情况。</p>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>招商周报</h3>
+            <p>每周汇总广告消耗、表单线索、接通情况、有效商机、预约数量和无效原因。</p>
+          </div>
+          <div class="card">
+            <h3>转交记录</h3>
+            <p>A 类商机记录企业信息、联系人身份、需求摘要、关注点和下一步动作。</p>
+          </div>
+          <div class="card">
+            <h3>优化建议</h3>
+            <p>根据真实通话反馈，调整目标行业、广告承诺、落地页字段和园区卖点。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="boundary">
+      <div class="wrap">
+        <p class="section-kicker">服务边界</p>
+        <h2>以专业边界建立合作信任</h2>
+        <p class="section-lead">招商成交受到园区位置、租售价格、产业政策、准入条件、客户预算、招商团队承接和企业决策周期等因素影响。我们重点负责前端获客、线索验证和商机转交。</p>
+        <div class="boundary">
+          <div class="card">
+            <h3>我们交付什么</h3>
+            <ul>
+              <li>园区招商卖点梳理与目标企业画像建议</li>
+              <li>招商广告投放、表单设计与线索收集</li>
+              <li>电话初筛、线索分级和有效商机记录</li>
+              <li>预约沟通转交、周报复盘和优化建议</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>我们不做什么</h3>
+            <ul>
+              <li>不出售手机号名单或原始个人信息数据库</li>
+              <li>不向客户交付底层投放人群数据</li>
+              <li>不承诺最终成交数量</li>
+              <li>不替代客户完成商务谈判和入驻签约</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid-2">
+          <div class="card">
+            <h3>适合什么客户</h3>
+            <p>民营产业园、产业地产、厂房租售项目，以及对招商结果负责的物业持有者、招商部门和营销部门。</p>
+          </div>
+          <div class="card">
+            <h3>首期如何开始</h3>
+            <p>建议从 14-21 天试运营开始，先验证目标行业反馈、有效商机数量、预约质量和招商承接问题，再决定是否扩大投放。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="diagnosis">
+      <div class="wrap diagnosis">
+        <div class="diagnosis-panel">
+          <p class="section-kicker">预约诊断</p>
+          <h2>先看清招商漏斗，再决定怎么投广告</h2>
+          <p>如果你负责的园区已经投过广告，但线索质量、上门数量或成交结果不理想，可以先做一次招商增长诊断。我们会围绕园区供给、目标行业、广告承诺、线索验证和招商承接，判断首期试运营应该怎么做。</p>
+          <ul>
+            <li>适合正在招商、去化压力较大的园区项目</li>
+            <li>适合希望把广告线索转为有效商机的营销团队</li>
+            <li>适合需要给老板或项目负责人说明投放价值的招商部门</li>
+          </ul>
+        </div>
+
+        <form id="leadForm" autocomplete="on">
+          <h2>预约招商增长诊断</h2>
+          <label>
+            姓名
+            <input id="name" name="name" type="text" placeholder="请输入您的姓名" required>
+          </label>
+          <label>
+            园区名称
+            <input id="park" name="park" type="text" placeholder="请输入园区或项目名称" required>
+          </label>
+          <label>
+            手机号码或微信号
+            <input id="contact" name="contact" type="text" placeholder="请输入手机号码或微信号" required>
+          </label>
+          <label>
+            补充说明
+            <textarea id="note" name="note" placeholder="例如：园区所在城市、空置面积、目标行业、当前投放问题"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-form" type="submit">生成咨询信息</button>
+            <a class="btn btn-call" href="tel:18578305991">直接拨打电话</a>
+          </div>
+          <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="notice">联系人：朱先生 18578305991。当前表单为静态页面，提交后会生成可复制的咨询信息，便于通过微信或短信发送。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>佛山市新颖数投网络科技有限公司</strong><br>
+        产业园招商广告投放与线索运营服务
+      </div>
+      <a class="phone-link" href="tel:18578305991">朱先生 18578305991</a>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById("leadForm");
+    const statusEl = document.getElementById("formStatus");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const park = document.getElementById("park").value.trim();
+      const contact = document.getElementById("contact").value.trim();
+      const note = document.getElementById("note").value.trim();
+
+      if (!name || !park || !contact) {
+        statusEl.textContent = "请先填写姓名、园区名称和手机号码或微信号。";
+        return;
+      }
+
+      const message = [
+        "预约招商增长诊断",
+        `姓名：${name}`,
+        `园区名称：${park}`,
+        `手机号码或微信号：${contact}`,
+        note ? `补充说明：${note}` : "补充说明：暂无",
+        "咨询对象：朱先生 18578305991"
+      ].join("\\n");
+
+      try {
+        await navigator.clipboard.writeText(message);
+        statusEl.textContent = "咨询信息已复制，可直接粘贴到微信或短信发送给朱先生。";
+      } catch (error) {
+        const encoded = encodeURIComponent(message);
+        window.location.href = `sms:18578305991?body=${encoded}`;
+        statusEl.textContent = "已尝试打开短信发送窗口。";
+      }
+    });
+  </script>
+</body>
+</html>
